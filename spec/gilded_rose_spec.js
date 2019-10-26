@@ -20,7 +20,7 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toEqual(0)
   })
   it('should ensure the quality of Aged Brie increases every day', function(){
-    const gildedRose = new Shop([new Item("Aged Brie", 50, 1)]);
+    const gildedRose = new Shop([new Item("Aged Brie", 24, 1)]);
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toEqual(2)
   })
