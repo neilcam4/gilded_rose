@@ -34,7 +34,7 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toEqual(MAX_QUALITY)
   })
   it('Once the sell by date has passed, Quality degrades twice as fast', function(){
-    const gildedRose = new Shop([new Item("Shoes", 0, 50)]);
+    const gildedRose = new Shop([new Item("Shoes", MIN_SELLIN, 50)]);
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toEqual(MAX_QUALITY - 2)
   })
